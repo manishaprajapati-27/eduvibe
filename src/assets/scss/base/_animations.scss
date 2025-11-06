@@ -1,0 +1,216 @@
+.card:hover .animate-flip-straight {
+  animation: flipIn 0.8s ease-in-out forwards;
+}
+
+//   Flip In
+@keyframes flipIn {
+  from {
+    transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+  }
+  40% {
+    transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+  }
+  60% {
+    transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+  }
+  80% {
+    transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+  }
+  to {
+    transform: perspective(400px);
+  }
+}
+
+@keyframes flipUp {
+  from {
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+  }
+  40% {
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+  }
+  60% {
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+  }
+  80% {
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+  }
+  to {
+    transform: perspective(400px);
+  }
+}
+
+@keyframes slideMove {
+  0% {
+    -webkit-transform: translateZ(0) translateY(-50%);
+    transform: translateZ(0) translateY(-50%);
+  }
+  50% {
+    -webkit-transform: translate3d(15px, 0, 0) translateY(-50%);
+    transform: translate3d(15px, 0, 0) translateY(-50%);
+  }
+  100% {
+    -webkit-transform: translateZ(0) translateY(-50%);
+    transform: translateZ(0) translateY(-50%);
+  }
+}
+
+// Horizontal Move
+@keyframes horizontalMove {
+  0% {
+    transform: translateZ(0);
+  }
+  50% {
+    transform: translate3d(-35px, 0, 0);
+  }
+  100% {
+    transform: translateZ(0);
+  }
+}
+
+@keyframes horizontalMove2 {
+  0% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+  50% {
+    -webkit-transform: translate3d(-15px, 0, 0);
+    transform: translate3d(-15px, 0, 0);
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+}
+
+@keyframes zumpPause {
+  0%,
+  40% {
+    transform: translateY(0);
+  } // rest
+  50% {
+    transform: translateY(-40px);
+  } // jump up
+  60% {
+    transform: translateY(0);
+  } // come down
+  100% {
+    transform: translateY(-30px);
+  }
+}
+
+@keyframes zump {
+  0% {
+    transform: translateZ(0);
+  }
+  50% {
+    transform: translate3d(0, -25px, 0);
+  }
+  100% {
+    transform: translateZ(0);
+  }
+}
+
+@keyframes zumpUp {
+  0% {
+    transform: translateZ(0);
+  }
+  50% {
+    transform: translate3d(0, -55px, 0);
+  }
+  100% {
+    transform: translateZ(0);
+  }
+}
+
+@keyframes zumpBottom {
+  0% {
+    transform: translateZ(0);
+  }
+  50% {
+    transform: translate3d(0, 10px, 0);
+  }
+  100% {
+    transform: translateZ(0);
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(1.15);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.15);
+  }
+}
+
+@keyframes zoomOut {
+  0% {
+    transform: scale(0.8);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.8);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes ripple {
+  // 0% {
+  //   transform: scale(0.5);
+  //   opacity: 0;
+  // }
+  // 50% {
+  //   transform: scale(1);
+  //   opacity: 1;
+  // }
+  // 100% {
+  //   transform: scale(0.5);
+  //   opacity: 0;
+  // }
+
+  0% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(2.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2.3);
+    opacity: 0;
+  }
+}
+
+@keyframes headerAnimation {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.animation-ripple {
+  &::after {
+    // animation: ripple 5s linear infinite forwards alternate;
+    animation: 2s linear 1s infinite normal none running ripple;
+  }
+  &::before {
+    // animation: ripple 5s linear infinite forwards alternate;
+    // animation: 2s linear 0s infinite normal none running ripple;
+    animation: 2s linear 0s infinite normal none running ripple;
+  }
+}
