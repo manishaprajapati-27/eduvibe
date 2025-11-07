@@ -1,12 +1,4 @@
 import { useState } from "react";
-import { FaCircle, FaComments, FaUserCircle } from "react-icons/fa";
-// import {
-//   MotionTag,
-//   fadeUp,
-//   fadeLeft,
-//   zoomIn,
-//   fadeDown,
-// } from "../components/Animation";
 import PageHeader from "../components/PageHeader";
 import Button from "../components/Button";
 import proDetail from "../assets/images/shop/product-detail.webp";
@@ -15,11 +7,12 @@ import { FaRupeeSign } from "react-icons/fa";
 import { FaStar } from "react-icons/fa6";
 import { FiPlus } from "react-icons/fi";
 import { FiMinus } from "react-icons/fi";
-import { FaFacebookF, FaPinterestP, FaInstagram } from "react-icons/fa";
-import { FaXTwitter, FaLocationDot } from "react-icons/fa6";
 import { FaCheckCircle } from "react-icons/fa";
 import { GoStar } from "react-icons/go";
 import ProComment from "../assets/images/team/2.webp";
+import ShopCard from "../components/ShopCard";
+import { products } from "../data";
+import Heading from "../components/Heading";
 
 const ProductDetails = () => {
   const [count, setCount] = useState(1);
@@ -42,7 +35,7 @@ const ProductDetails = () => {
         <div className="container mx-auto lg:px-0 px-4">
           <div className="card mb-5 h-full relative mx-auto">
             <div className="grid lg:grid-cols-2 grid-cols-1 gap-8">
-              <div className="w-full lg:w-full relative overflow-hidden border border-light">
+              <div className="w-full lg:w-full relative rounded-md overflow-hidden border border-light">
                 <img src={proDetail} className="w-full" alt="Product" />
               </div>
               <div className="flex gap-4 pt-8 relative z-10">
@@ -164,15 +157,15 @@ const ProductDetails = () => {
                 </div>
               </div>
             </div>
-            <div className="w-full max-w-5xl mx-auto mt-8">
+            <div className="w-full max-w-5xl mx-auto mt-14">
               {/* Tabs */}
               <div className="flex space-x-8 border-b justify-center border-gray-200">
                 <button
                   onClick={() => setActiveTab("description")}
-                  className={`pb-3 text-[18px] font-semibold transition-all duration-500 ease-in-out cursor-pointer ${
+                  className={`pb-3 text-[18px] font-bold border-b-2 transition-all duration-500 ease-in-out cursor-pointer ${
                     activeTab === "description"
-                      ? "text-indigo-600 border-b-2 border-indigo-600"
-                      : "text-gray-600 hover:text-indigo-500"
+                      ? "text-primary border-primary"
+                      : "text-dark hover:text-primary border-transparent"
                   }`}
                 >
                   Description
@@ -180,10 +173,10 @@ const ProductDetails = () => {
 
                 <button
                   onClick={() => setActiveTab("reviews")}
-                  className={`pb-3 text-[18px] font-semibold transition-all duration-500 ease-in-out cursor-pointer ${
+                  className={`pb-3 text-[18px] font-bold border-b-2 transition-all duration-500 ease-in-out cursor-pointer ${
                     activeTab === "reviews"
-                      ? "text-indigo-600 border-b-2 border-indigo-600"
-                      : "text-gray-600 hover:text-indigo-500"
+                      ? "text-primary border-primary"
+                      : "text-dark hover:text-primary border-transparent"
                   }`}
                 >
                   Reviews (2)
@@ -234,7 +227,7 @@ const ProductDetails = () => {
                       <h4 className="text-dark font-bold text-[28px]">
                         2 reviews
                       </h4>
-                      <div className="flex items-center md:flex-row flex-col gap-10 relative py-10 border-b border-light">
+                      <div className="flex md:items-center md:flex-row flex-col md:gap-10 gap-4 relative py-10 border-b border-light">
                         <div>
                           <div className="rounded-full overflow-hidden w-[70px] h-[70px] transition-all duration-500 ease-in-out group-hover:border-white">
                             <img
@@ -268,7 +261,7 @@ const ProductDetails = () => {
                           </p>
                         </div>
                       </div>
-                      <div className="flex items-center md:flex-row flex-col gap-10 relative py-10">
+                      <div className="flex md:items-center md:flex-row flex-col gap-10 relative py-10">
                         <div>
                           <div className="rounded-full overflow-hidden w-[70px] h-[70px] transition-all duration-500 ease-in-out group-hover:border-white">
                             <img
@@ -329,7 +322,7 @@ const ProductDetails = () => {
                           </span>
                         </div>
                       </div>
-                      <div className="grid grid-cols-2 gap-7">
+                      <div className="grid md:grid-cols-2 md:gap-7">
                         <div className="mb-7">
                           <input
                             type="text"
@@ -371,6 +364,14 @@ const ProductDetails = () => {
                 )}
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+      <div className="pb-30">
+        <div className="container px-4 lg:px-0 mx-auto">
+          <Heading heading="Related Products" subHeading="Similar Items" />
+          <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 mt-10">
+            <ShopCard shopData={products.slice(0, 3)} />
           </div>
         </div>
       </div>

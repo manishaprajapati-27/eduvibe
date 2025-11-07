@@ -318,7 +318,7 @@ export const curriculums = [
     title: "What is Tailwind CSS?",
     content: (
       <>
-       <div className="border-b border-[#d8d8d8] flex md:justify-between py-3 md:flex-row flex-col md:gap-y-0 gap-y-3">
+        <div className="border-b border-[#d8d8d8] flex md:justify-between py-3 md:flex-row flex-col md:gap-y-0 gap-y-3">
           <span className="text-dark-alt text-[1.05rem] font-semibold flex gap-2 items-center">
             <IoTimeOutline className="text-primary" />A Beginner’s Introduction
             to Excel Functions
@@ -352,7 +352,7 @@ export const curriculums = [
     title: "How do I use this accordion?",
     content: (
       <>
-    <div className="border-b border-[#d8d8d8] flex md:justify-between py-3 md:flex-row flex-col md:gap-y-0 gap-y-3">
+        <div className="border-b border-[#d8d8d8] flex md:justify-between py-3 md:flex-row flex-col md:gap-y-0 gap-y-3">
           <span className="text-dark-alt text-[1.05rem] font-semibold flex gap-2 items-center">
             <IoTimeOutline className="text-primary" />A Beginner’s Introduction
             to Excel Functions
@@ -386,47 +386,165 @@ export const curriculums = [
 
 // Blog Data
 
-  export const blogs = [
-    {
-      brand: "Social Media",
-      title: "The Complete Web Developer Guideline 2023",
-      date: "17 Oct, 2025",
-      link: "#!",
-      image: "src/assets/images/blog/1.webp",
-    },
-    {
-      brand: "Social Media",
-      title: "The Complete Web Developer Guideline 2023",
-      date: "17 Oct, 2025",
-      link: "#!",
-      image: "src/assets/images/blog/2.webp",
-    },
-    {
-      brand: "Social Media",
-      title: "The Complete Web Developer Guideline 2023",
-      date: "17 Oct, 2025",
-      link: "#!",
-      image: "src/assets/images/blog/3.webp",
-    },
-    {
-      brand: "Social Media",
-      title: "The Complete Web Developer Guideline 2023",
-      date: "17 Oct, 2025",
-      link: "#!",
-      image: "src/assets/images/blog/1.webp",
-    },
-    {
-      brand: "Social Media",
-      title: "The Complete Web Developer Guideline 2023",
-      date: "17 Oct, 2025",
-      link: "#!",
-      image: "src/assets/images/blog/2.webp",
-    },
-    {
-      brand: "Social Media",
-      title: "The Complete Web Developer Guideline 2023",
-      date: "17 Oct, 2025",
-      link: "#!",
-      image: "src/assets/images/blog/3.webp",
-    },
-  ];
+export const blogs = [
+  {
+    brand: "Social Media",
+    title: "The Complete Web Developer Guideline 2023",
+    date: "17 Oct, 2025",
+    link: "#!",
+    image: "src/assets/images/blog/1.webp",
+  },
+  {
+    brand: "Social Media",
+    title: "The Complete Web Developer Guideline 2023",
+    date: "17 Oct, 2025",
+    link: "#!",
+    image: "src/assets/images/blog/2.webp",
+  },
+  {
+    brand: "Social Media",
+    title: "The Complete Web Developer Guideline 2023",
+    date: "17 Oct, 2025",
+    link: "#!",
+    image: "src/assets/images/blog/3.webp",
+  },
+  {
+    brand: "Social Media",
+    title: "The Complete Web Developer Guideline 2023",
+    date: "17 Oct, 2025",
+    link: "#!",
+    image: "src/assets/images/blog/1.webp",
+  },
+  {
+    brand: "Social Media",
+    title: "The Complete Web Developer Guideline 2023",
+    date: "17 Oct, 2025",
+    link: "#!",
+    image: "src/assets/images/blog/2.webp",
+  },
+  {
+    brand: "Social Media",
+    title: "The Complete Web Developer Guideline 2023",
+    date: "17 Oct, 2025",
+    link: "#!",
+    image: "src/assets/images/blog/3.webp",
+  },
+];
+
+// Shop Data
+import { FaRupeeSign } from "react-icons/fa";
+
+export const products = [
+  {
+    title: "Dragon Fighter",
+    price: (
+      <>
+        <FaRupeeSign className="text-[1rem]" />
+        150
+      </>
+    ),
+    author: "By: Christina Henry",
+    image: "src/assets/images/shop/product1.webp",
+  },
+  {
+    title: "Dragon Fighter",
+    price: (
+      <>
+        <FaRupeeSign className="text-[1rem]" />
+        150
+      </>
+    ),
+    author: "By: Christina Henry",
+    image: "src/assets/images/shop/product1.webp",
+  },
+  {
+    title: "Dragon Fighter",
+    price: (
+      <>
+        <FaRupeeSign className="text-[1rem]" />
+        150
+      </>
+    ),
+    prevPrice: (
+      <>
+        <FaRupeeSign className="text-[0.8rem]" />
+        100
+      </>
+    ),
+    author: "By: Christina Henry",
+    image: "src/assets/images/shop/product1.webp",
+  },
+  {
+    title: "Dragon Fighter",
+    price: (
+      <>
+        <FaRupeeSign className="text-[1rem]" />
+        150
+      </>
+    ),
+    author: "By: Christina Henry",
+    image: "src/assets/images/shop/product1.webp",
+  },
+  {
+    title: "Dragon Fighter",
+    price: (
+      <>
+        <FaRupeeSign className="text-[1rem]" />
+        150
+      </>
+    ),
+    prevPrice: (
+      <>
+        <FaRupeeSign className="text-[0.8rem]" />
+        100
+      </>
+    ),
+    author: "By: Christina Henry",
+    image: "src/assets/images/shop/product1.webp",
+  },
+  {
+    title: "Dragon Fighter",
+    price: (
+      <>
+        <FaRupeeSign className="text-[1rem]" />
+        150
+      </>
+    ),
+    prevPrice: (
+      <>
+        <FaRupeeSign className="text-[0.8rem]" />
+        100
+      </>
+    ),
+    author: "By: Christina Henry",
+    image: "src/assets/images/shop/product1.webp",
+  },
+  {
+    title: "Dragon Fighter",
+    price: (
+      <>
+        <FaRupeeSign className="text-[1rem]" />
+        150
+      </>
+    ),
+    author: "By: Christina Henry",
+    image: "src/assets/images/shop/product1.webp",
+  },
+  {
+    title: "Dragon Fighter",
+    price: (
+      <>
+        <FaRupeeSign className="text-[1rem]" />
+        150
+      </>
+    ),
+    prevPrice: (
+      <>
+        <FaRupeeSign className="text-[0.8rem]" />
+        100
+      </>
+    ),
+    author: "By: Christina Henry",
+    image: "src/assets/images/shop/product1.webp",
+  },
+];
