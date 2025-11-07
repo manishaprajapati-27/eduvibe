@@ -1,5 +1,5 @@
-import React from "react";
 import Heading from "../../components/Heading";
+import { MotionTag } from "../../components/Animation";
 import shape1 from "../../assets/images/course-categories/shape1.png";
 import shape2 from "../../assets/images/course-categories/shape2.png";
 import shape3 from "../../assets/images/course-categories/shape3.png";
@@ -274,7 +274,7 @@ const CourseCategoriesSection = () => {
         />
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {categories.map((category, index) => (
-            <div
+            <MotionTag delay={index*0.2}
               key={index}
               className="px-8 py-10 rounded-lg bg-light flex flex-col items-center justify-center text-center transition duration-500 ease-in-out group hover:bg-primary"
             >
@@ -284,7 +284,7 @@ const CourseCategoriesSection = () => {
               </div>
               <h3 className="text-[1.3rem] font-semibold mb-2 transition duration-500 ease-in-out group-hover:text-white py-3">{category.title}</h3>
               <p className="text-dark-alt font-medium transition duration-500 ease-in-out group-hover:text-white">{category.description}</p>
-            </div>
+            </MotionTag>
           ))}
         </div>
         <img src={shape1} className="absolute bottom-[28%] left-[10%] hidden lg:block" alt="Course Shape 1" />

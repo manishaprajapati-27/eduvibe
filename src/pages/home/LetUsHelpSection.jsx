@@ -3,6 +3,7 @@ import Button from "../../components/Button";
 import { IoArrowForwardSharp, IoTimeOutline } from "react-icons/io5";
 import Heading from "../../components/Heading";
 import { IoCallOutline } from "react-icons/io5";
+import { MotionTag } from "../../components/Animation";
 
 const LetUsHelpSection = () => {
   return (
@@ -14,7 +15,7 @@ const LetUsHelpSection = () => {
             subHeading="Let Us Help"
             alignment="center" hdClasses="text-white" sbClass="text-white"
           />
-          <div className="flex lg:items-center gap-8 lg:flex-row flex-col mt-12 lg:mt-0">
+          <MotionTag className="flex lg:items-center gap-8 lg:flex-row flex-col mt-12 lg:mt-0">
             <div>
               <Button
                   title={
@@ -31,7 +32,7 @@ const LetUsHelpSection = () => {
                 />
             </div>
                 <a href="#!" className="text-white font-bold text-[19px] flex items-center gap-1.5"><IoCallOutline /> +728-238-399-200</a>
-          </div>
+          </MotionTag>
         </div>
       </div>
     </div>

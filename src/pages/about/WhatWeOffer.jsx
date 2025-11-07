@@ -6,6 +6,7 @@ import Shape3 from "../../assets/images/what-we-offer/shape3.png";
 import Icon1 from "../../assets/images/what-we-offer/icon1.png";
 import Icon2 from "../../assets/images/what-we-offer/icon2.png";
 import Icon3 from "../../assets/images/what-we-offer/icon3.png";
+import { MotionTag } from "../../components/Animation";
 
 const WhatWeOffer = () => {
   const offers = [
@@ -57,7 +58,8 @@ const WhatWeOffer = () => {
         />
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {offers.map((offer, index) => (
-            <div
+            <MotionTag
+              delay={index * 0.2}
               key={index}
               className="px-8 py-10 rounded-lg bg-light flex flex-col items-center justify-center text-center transition duration-500 ease-in-out group"
               style={{ backgroundColor: offer.bgColor }}
@@ -67,13 +69,24 @@ const WhatWeOffer = () => {
                   <div className="relative">
                     <img src={offer.icon} alt={offer.title} />
                     <div className="">
-                      <img src={Icon1} alt="Icon" className="absolute top-0 left-0 transition-all duration-500 ease-in-out opacity-0 group-hover:opacity-100 group-hover:top-7 group-hover:-left-10" />
-                      <img src={Icon2} alt="Icon" className="absolute top-0 right-0 transition-all duration-500 ease-in-out opacity-0 group-hover:opacity-100 group-hover:-top-5 group-hover:-right-8" />
-                      <img src={Icon3} alt="Icon" className="absolute bottom-0 right-0 transition-all duration-500 ease-in-out opacity-0 group-hover:opacity-100 group-hover:-bottom-4 group-hover:-right-8" />
+                      <img
+                        src={Icon1}
+                        alt="Icon"
+                        className="absolute top-0 left-0 transition-all duration-500 ease-in-out opacity-0 group-hover:opacity-100 group-hover:top-7 group-hover:-left-10"
+                      />
+                      <img
+                        src={Icon2}
+                        alt="Icon"
+                        className="absolute top-0 right-0 transition-all duration-500 ease-in-out opacity-0 group-hover:opacity-100 group-hover:-top-5 group-hover:-right-8"
+                      />
+                      <img
+                        src={Icon3}
+                        alt="Icon"
+                        className="absolute bottom-0 right-0 transition-all duration-500 ease-in-out opacity-0 group-hover:opacity-100 group-hover:-bottom-4 group-hover:-right-8"
+                      />
                     </div>
                   </div>
                 </div>
-
               </div>
               <h3 className="text-[1.3rem] font-semibold mb-2 transition duration-500 ease-in-out py-3 hover:text-primary">
                 {offer.title}
@@ -81,7 +94,7 @@ const WhatWeOffer = () => {
               <p className="text-dark-alt font-medium transition duration-500 ease-in-out">
                 {offer.description}
               </p>
-            </div>
+            </MotionTag>
           ))}
         </div>
         <img

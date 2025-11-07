@@ -1,9 +1,9 @@
-import React from "react";
 import Heading from "../../components/Heading";
 import Button from "../../components/Button";
 import { IoArrowForwardSharp, IoTimeOutline } from "react-icons/io5";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { MdOutlineCalendarMonth } from "react-icons/md";
+import { MotionTag } from "../../components/Animation";
 import shape1 from "../../assets/images/learn-together/shape1.png";
 import shape2 from "../../assets/images/learn-together/shape2.png";
 import shape3 from "../../assets/images/learn-together/shape3.png";
@@ -71,8 +71,8 @@ const LearnTogetherSection = () => {
           hdClasses="mx-auto text-center"
         />
         <div className="grid grid-cols-1">
-          {events.map((event) => (
-            <div
+          {events.map((event, index) => (
+            <MotionTag delay={index*0.2}
               className="card mb-8 flex md:justify-between justify-start flex-col lg:flex-row bg-white lg:items-center items-start relative rounded-sm shadow-md"
               key={event.id}
             >
@@ -134,7 +134,7 @@ const LearnTogetherSection = () => {
                   }}
                 />
               </div>
-            </div>
+            </MotionTag>
           ))}
         </div>
       </div>

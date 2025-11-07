@@ -7,7 +7,6 @@ import OurTeam from "./about/OurTeam";
 
 const AboutUs = () => {
   return (
-    // <div className="lg:py-30 py-20">
     <>
       <PageHeader title="About Us" pageTitle="About Us" />
       <AboutUsSection />
@@ -15,7 +14,6 @@ const AboutUs = () => {
       <OurTeam />
       <TestimonialSection />
     </>
-    // </div>
   );
 };
 

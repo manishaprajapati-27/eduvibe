@@ -1,10 +1,7 @@
 import { useState } from "react";
 import Heading from "../../components/Heading";
 import { newCourses, featuredCourses, popularCourses } from "../../data";
-import { RiFileList3Line } from "react-icons/ri";
-import { FaRegStar } from "react-icons/fa6";
-import Button from "../../components/Button";
-import { IoArrowForwardSharp } from "react-icons/io5";
+import { MotionTag } from "../../components/Animation";
 import shape1 from "../../assets/images/whoweare/shape1.png";
 import shape2 from "../../assets/images/whoweare/shape2.png";
 import CourseCard from "../../components/CourseCard";
@@ -46,7 +43,7 @@ const WhoWeAreSection = () => {
             hdClasses="lg:text-start text-center"
           />
 
-          <div
+          <MotionTag delay={0.3}
             role="tablist"
             className="flex gap-3 mt-10 lg:mt-0 justify-center lg:justify-start"
           >
@@ -65,9 +62,9 @@ const WhoWeAreSection = () => {
                 {tab.title}
               </button>
             ))}
-          </div>
+          </MotionTag>
         </div>
-        <div className="tabs">
+        <MotionTag className="tabs">
           {tabs.map((tab, i) => (
             <div
               key={i}
@@ -82,7 +79,7 @@ const WhoWeAreSection = () => {
               </div>
             </div>
           ))}
-        </div>
+        </MotionTag>
         <img
           src={shape1}
           alt="Shape 1"

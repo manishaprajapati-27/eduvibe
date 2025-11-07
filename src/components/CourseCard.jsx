@@ -3,12 +3,13 @@ import { IoArrowForwardSharp } from "react-icons/io5";
 import { RiFileList3Line } from "react-icons/ri";
 import { FaRegStar } from "react-icons/fa6";
 import Button from "../components/Button";
+import { MotionTag } from "./Animation";
 
 const CourseCard = ({ cardData }) => {
   return (
     <>
-      {cardData.map((data) => (
-        <div
+      {cardData.map((data, index) => (
+        <MotionTag delay={index*0.2} 
           key={data.id}
           className="group bg-white rounded-lg shadow-lg overflow-hidden relative"
         >
@@ -110,7 +111,7 @@ const CourseCard = ({ cardData }) => {
               />
             </div>
           </div>
-        </div>
+        </MotionTag>
       ))}
     </>
   );

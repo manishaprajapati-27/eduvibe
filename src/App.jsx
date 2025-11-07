@@ -35,7 +35,6 @@ const App = () => {
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/forgot-password" element={<ForgotPassword />} />
       </Routes>
-      {/* <Home/> */}
       <Footer />
     </>
   );

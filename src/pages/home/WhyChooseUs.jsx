@@ -11,6 +11,7 @@ import { SlSupport } from "react-icons/sl";
 import { FaRegFaceSmile } from "react-icons/fa6";
 import shape1 from "../../assets/images/why-choose-us/shape1.png";
 import shape2 from "../../assets/images/why-choose-us/shape2.png";
+import { MotionTag } from "../../components/Animation";
 
 const WhyChooseUs = () => {
   const data = [
@@ -43,11 +44,11 @@ const WhyChooseUs = () => {
             <div className="flex gap-8 items-end mb-8">
               <div className="grid grid-cols-2 gap-7">
                 {data.map((dt, index) => (
-                  <div key={index} className="card bg-white shadow-[0_0_15px_#121c2c15] relative z-30 rounded-md py-10 px-8 flex flex-col justify-center items-center">
+                  <MotionTag delay={index*0.2} key={index} className="card bg-white shadow-[0_0_15px_#121c2c15] relative z-30 rounded-md py-10 px-8 flex flex-col justify-center items-center">
                     <img src={dt.image} alt={dt.title} />
                     <h4 className="text-dark font-extrabold text-4xl mt-6 mb-2">{dt.countNum}</h4>
                     <p className="text-dark-alt font-medium">{dt.title}</p>
-                  </div>
+                  </MotionTag>
                 ))}
               </div>
             </div>
@@ -59,7 +60,7 @@ const WhyChooseUs = () => {
               classes=""
               hdClasses="mx-auto"
             />
-            <div className="mt-8">
+            <MotionTag className="mt-8">
               <p className="text-dark-alt font-medium">
                 Our courses are designed by industry experts and delivered
                 through interactive online modules, allowing you to learn at
@@ -100,7 +101,7 @@ const WhyChooseUs = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </MotionTag>
           </div>
         </div>
         <img

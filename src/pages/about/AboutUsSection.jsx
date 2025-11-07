@@ -7,20 +7,21 @@ import AboutImage2 from "../../assets/images/about-us/2.png";
 import Shape1 from "../../assets/images/about-us/shape1.png";
 import Shape2 from "../../assets/images/about-us/shape2.png";
 import Shape3 from "../../assets/images/about-us/shape3.png";
+import { MotionTag } from "../../components/Animation";
 
 const AboutUsSection = () => {
   return (
     <div className="py-30 relative">
       <div className="container mx-auto lg:px-0 px-4">
         <div className="grid lg:grid-cols-2 grid-cols-1">
-          <div className="relative lg:me-10">
+          <MotionTag className="relative lg:me-10">
             <div className="relative lg:-left-14 mb-5">
-                <img
-              src={AboutImage}
-              alt="About Image"
-              className="relative z-10"
-            />
-            <div className="border-7 border-secondary absolute bottom-0 left-18 rounded-full h-14 w-14 opacity-55 animate-[zoomIn_4s_linear_infinite] hidden lg:block"></div>
+              <img
+                src={AboutImage}
+                alt="About Image"
+                className="relative z-10"
+              />
+              <div className="border-7 border-secondary absolute bottom-0 left-18 rounded-full h-14 w-14 opacity-55 animate-[zoomIn_4s_linear_infinite] hidden lg:block"></div>
             </div>
             <div className="absolute -bottom-15 right-0 lg:right-15 hidden lg:block">
               <img
@@ -36,8 +37,8 @@ const AboutUsSection = () => {
                 Finished <br /> Sessions
               </p>
             </div>
-          </div>
-          <div className="">
+          </MotionTag>
+          <MotionTag className="">
             <Heading
               heading="Knowledge is power, Information is liberating."
               subHeading="About Us"
@@ -82,12 +83,24 @@ const AboutUsSection = () => {
                 className="btn btn-primary mt-8 text-[18px]"
               />
             </div>
-          </div>
+          </MotionTag>
         </div>
       </div>
-      <img src={Shape1} alt="Shape 1" className="absolute top-[43%] left-[10%] hidden lg:block" />
-      <img src={Shape2} alt="Shape 2" className="absolute top-[10%] right-[4%] hidden lg:block" />
-      <img src={Shape3} alt="Shape 3" className="absolute bottom-[16%] right-[10%] hidden lg:block" />
+      <img
+        src={Shape1}
+        alt="Shape 1"
+        className="absolute top-[43%] left-[10%] hidden lg:block"
+      />
+      <img
+        src={Shape2}
+        alt="Shape 2"
+        className="absolute top-[10%] right-[4%] hidden lg:block"
+      />
+      <img
+        src={Shape3}
+        alt="Shape 3"
+        className="absolute bottom-[16%] right-[10%] hidden lg:block"
+      />
     </div>
   );
 };

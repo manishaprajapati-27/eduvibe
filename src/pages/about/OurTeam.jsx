@@ -8,6 +8,7 @@ import Shape1 from "../../assets/images/team/shape1.png";
 import Shape2 from "../../assets/images/team/shape2.png";
 import Shape3 from "../../assets/images/team/shape3.png";
 import Shape4 from "../../assets/images/team/shape4.png";
+import { MotionTag } from "../../components/Animation";
 
 const OurTeam = () => {
   const teams = [
@@ -87,7 +88,7 @@ const OurTeam = () => {
         />
         <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-0">
           {teams.map((team, index) => (
-            <div className="card relative group mb-5" key={index}>
+            <MotionTag delay={index*0.2} className="card relative group mb-5" key={index}>
               <div className="relative p-10 flex justify-center items-center after:content-[''] after:absolute after:top-0 after:left-0 after:h-full after:w-full after:transition-all after:duration-500 after:ease-in-out after:bg-[url(src/assets/images/team/border-shape.png)] after:bg-center after:bg-no-repeat group-hover:after:rotate-90">
                 <div className="relative rounded-full overflow-hidden after:content-[''] after:absolute after:top-0 after:left-0 after:opacity-0 group-hover:after:opacity-100 after:h-full after:w-full after:transition-all after:duration-500 after:ease-in-out after:bg-[#070a3352] after:bg-center after:bg-no-repeat">
                   <img src={team.image} alt={team.name} className="" />
@@ -119,7 +120,7 @@ const OurTeam = () => {
               <h6 className="text-dark-alt group-hover:text-primary text-[18px] font-medium text-center transition-all duration-300 ease-in-out">
                 {team.designation}
               </h6>
-            </div>
+            </MotionTag>
           ))}
         </div>
       </div>

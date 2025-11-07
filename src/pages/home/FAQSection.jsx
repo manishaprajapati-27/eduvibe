@@ -7,6 +7,7 @@ import faqImage2 from "../../assets/images/faq/2.jpg";
 import faqImage3 from "../../assets/images/faq/3.jpg";
 import { IoRibbonSharp } from "react-icons/io5";
 import { FaRegSmile } from "react-icons/fa";
+import { MotionTag } from "../../components/Animation";
 import shape1 from "../../assets/images/faq/shape1.png";
 import shape2 from "../../assets/images/faq/shape2.png";
 import shape3 from "../../assets/images/faq/shape3.png";
@@ -17,7 +18,7 @@ const FAQSection = () => {
     <div className="bg-[url('src/assets/images/faq/faq-bg.jpg')] bg-cover bg-center md:py-30 py-20 relative">
       <div className="container mx-auto lg:px-0 px-4">
         <div className="grid lg:grid-cols-2 grid-cols-1">
-          <div className="lg:me-25 relative mb-12 lg:mb-0 me-0">
+          <MotionTag className="lg:me-25 relative mb-12 lg:mb-0 me-0">
             <div className="flex gap-8 items-end mb-8 justify-center lg:justify-start">
               <div className="relative">
                 <span className="h-[50px] w-[50px] text-2xl text-white bg-primary rounded-full flex justify-center items-center absolute transform translate-x-[-50%] left-[50%] top-[-25px]">
@@ -53,7 +54,7 @@ const FAQSection = () => {
                 <h6 className="text-[14px] text-dark-alt font-semibold">Total Students</h6>
               </div>
             </div>
-          </div>
+          </MotionTag>
           <div className="">
             <Heading
               heading="The highest result of education is tolerance"
@@ -61,7 +62,7 @@ const FAQSection = () => {
               classes=""
               hdClasses="mx-auto"
             />
-            <div className="mt-4">
+            <MotionTag delay={0.3} className="mt-4">
               <p className="text-dark-alt font-medium">
                 Online education refers to a learning experience that takes
                 place over the internet, using various digital tools and
@@ -132,7 +133,7 @@ const FAQSection = () => {
                 }
                 className="btn btn-primary mt-8"
               />
-            </div>
+            </MotionTag>
           </div>
         </div>
         <img src={shape1} className="absolute top-[12%] left-[4%] hidden lg:block" alt="FAQ Shape 1" />
