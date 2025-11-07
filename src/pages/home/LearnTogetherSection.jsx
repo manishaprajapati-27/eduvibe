@@ -62,7 +62,7 @@ const LearnTogetherSection = () => {
     },
   ];
   return (
-    <div className="md:py-30 py-20 relative after:content-[''] after:absolute lg:after:-top-[200px] after:top-0 after:left-0 after:w-full after:h-full lg:after:h-[calc(100%+200px)] after:bg-[url('src/assets/images/learn-together/bg.jpg')] after:bg-cover after:bg-center">
+    <div className="md:lg:py-30 md:py-20 py-15 py-20 relative after:content-[''] after:absolute lg:after:-top-[200px] after:top-0 after:left-0 after:w-full after:h-full lg:after:h-[calc(100%+200px)] after:bg-[url('src/assets/images/learn-together/bg.jpg')] after:bg-cover after:bg-center">
       <div className="container mx-auto lg:px-0 px-4 relative z-20">
         <Heading
           heading="Upcoming Educational Events"

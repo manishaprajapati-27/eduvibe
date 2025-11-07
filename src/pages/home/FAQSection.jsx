@@ -15,7 +15,7 @@ import shape4 from "../../assets/images/faq/shape4.png";
 
 const FAQSection = () => {
   return (
-    <div className="bg-[url('src/assets/images/faq/faq-bg.jpg')] bg-cover bg-center md:py-30 py-20 relative">
+    <div className="bg-[url('src/assets/images/faq/faq-bg.jpg')] bg-cover bg-center md:lg:py-30 md:py-20 py-15 py-20 relative">
       <div className="container mx-auto lg:px-0 px-4">
         <div className="grid lg:grid-cols-2 grid-cols-1">
           <MotionTag className="lg:me-25 relative mb-12 lg:mb-0 me-0">

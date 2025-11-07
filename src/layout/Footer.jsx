@@ -16,7 +16,7 @@ import Shape2 from "../assets/images/footer-shape2.png";
 
 const Footer = () => {
   return (
-    <footer className="pt-30 bg-[#231F40] relative">
+    <footer className="lg:pt-30 pt-15 bg-[#231F40] relative">
       <div className="container mx-auto lg:px-0 px-4">
         <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1">
           <div className="md:pe-10 mb-8 lg:mb-0">
@@ -200,9 +200,9 @@ const Footer = () => {
             </p>
           </div>
         </div>
-        <div className="text-center py-8 pt-22">
+        <div className="text-center py-8 lg:pt-22">
           <p className="text-white font-semibold">
-            Copyright 2025 EduVibe | Developed By{" "}
+            Copyright 2025 EduVibe | Developed By
             <Link
               to="#!"
               className="transition-all duration-500 ease-in-out hover:text-primary"

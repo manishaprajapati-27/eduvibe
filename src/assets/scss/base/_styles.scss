@@ -41,17 +41,6 @@ p {
     }
   }
 
-  // &-grey {
-  //   span {
-  //     background: #f2f2f2;
-  //     color: $secondary;
-  //     &:nth-child(2) {
-  //       background: $secondary;
-  //       color: $white;
-  //     }
-  //   }
-  // }
-
   &-primary {
     background: $primary;
     color: $white;
@@ -77,21 +66,6 @@ p {
       background: $primary;
     }
   }
-
-  // &-large {
-  //   span {
-  //     padding: 1rem 2rem;
-  //   }
-  // }
-
-  // &:hover {
-  //   span {
-  //     transform: translateY(-100%);
-  //     &:nth-child(2) {
-  //       transform: translateY(0);
-  //     }
-  //   }
-  // }
 }
 
 header {
@@ -245,7 +219,7 @@ header {
       display: none;
     }
     .mob-sidebar {
-      width: 83%;
+      width: 90%;
     }
     .logo {
       padding: 1.2rem 0;
@@ -278,9 +252,6 @@ header {
   }
 
   @media (max-width: 1900px) and (min-width: 1300px) {
-    // &::after{
-    //   left: calc((100% - 840px) / 2);
-    // }
 
     .container {
       max-width: 100%;
@@ -292,18 +263,8 @@ header {
 @media (min-width: 1200px) {
   .container {
     max-width: 1200px;
-    // background-color:#f8dfcc;
-    // background: linear-gradient();
   }
 }
-
-// @media (max-width: 550px) and (max-height: 725px) {
-//   .hero-image {
-//     width: 56%;
-//     right: 0;
-//     left: inherit;
-//   }
-// }
 
 // Hero
 
@@ -395,6 +356,14 @@ header {
       &::after {
         opacity: 1;
       }
+    }
+  }
+}
+
+@media (max-width:768px) {
+  .heading{
+    br{
+      display: none;
     }
   }
 }

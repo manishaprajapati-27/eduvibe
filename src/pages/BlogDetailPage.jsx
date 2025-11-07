@@ -40,7 +40,7 @@ const BlogDetailPage = () => {
   return (
     <>
       <PageHeader title="Social Media Marketing" pageTitle="Blog Detail" />
-      <div className="py-30">
+      <div className="lg:py-30 md:py-20 py-15">
         <div className="container mx-auto lg:px-0 px-4">
           <div className="grid grid-cols-12 gap-8">
             <div className="lg:col-span-8 col-span-12">

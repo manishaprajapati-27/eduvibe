@@ -12,9 +12,8 @@ const HeroSection = () => {
     <div className="hero relative md:pt-44 lg:pb-50 pt-34 pb-0 overflow-hidden lg:min-h-screen bg-[url('src/assets/images/hero/hero-bg.jpg')] bg-cover bg-center">
       <div className="container mx-auto xl:px-0 px-4">
         <div className="relative lg:w-[50%] w-full lg:pt-24 pt-0">
-          <MotionTag as="h5" className="text-primary font-bold tracking-[1px] md:pb-4 pb-2 flex items-center gap-2">
-            <div className="w-12 h-0.5 bg-primary"></div>BETTER LEARNING FUTURE
-            WITH US
+          <MotionTag as="h5" className="text-primary font-bold tracking-[1px] md:pb-4 pb-2 flex items-center gap-2 md:text-[16px] text-[15px]">
+            <div className="md:w-12 w-8 h-0.5 bg-primary"></div>BETTER LEARNING FUTURE WITH US
           </MotionTag>
           <MotionTag as="h2" delay={0.3} className="lg:text-[65px] md:text-[48px] text-[32px] text-dark font-extrabold md:pb-8 pb-3 leading-normal md:leading-19 lg:pe-18">
             Committed To Learn Excellence In Education

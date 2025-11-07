@@ -7,7 +7,7 @@ const Account = () => {
   return (
     <>
       <PageHeader title="Login or Register" pageTitle="Account" />
-      <div className="py-30">
+      <div className="lg:py-30 md:py-20 py-15">
         <div className="container mx-auto px-4 lg:px-0">
           <div className="grid lg:grid-cols-2 grid-cols-1 gap-6">
             <div className="card p-5 border border-light rounded-md">

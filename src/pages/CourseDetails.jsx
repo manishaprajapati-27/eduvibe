@@ -57,7 +57,7 @@ const CourseDetails = ({ videoId = "M7lc1UVf-VE", title = "Intro video" }) => {
   return (
     <>
       <PageHeader title="Course Details" pageTitle="Course Details" />
-      <div className="py-30">
+      <div className="lg:py-30 md:py-20 py-15">
         <div className="container mx-auto px-4 lg:px-0">
           <div className="h-132 w-full overflow-hidden">
             <img

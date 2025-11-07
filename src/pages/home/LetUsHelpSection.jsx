@@ -7,7 +7,7 @@ import { MotionTag } from "../../components/Animation";
 
 const LetUsHelpSection = () => {
   return (
-    <div className="md:py-30 py-20 bg-[url('src/assets/images/let-us-help.jpg')] bg-cover bg-center">
+    <div className="md:lg:py-30 md:py-20 py-15 py-20 bg-[url('src/assets/images/let-us-help.jpg')] bg-cover bg-center">
       <div className="container mx-auto lg:px-0 px-4">
         <div className="flex lg:justify-between lg:items-center lg:flex-row flex-col">
           <Heading

@@ -1,7 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import logo from "./../assets/images/logo.png";
-import { FaFacebookF, FaPinterestP, FaInstagram } from "react-icons/fa";
 import { FaPlus, FaMinus } from "react-icons/fa6";
 import { IoSearch, IoCloseOutline } from "react-icons/io5";
 import { IoMdMenu } from "react-icons/io";
@@ -51,73 +50,12 @@ const Header = () => {
     };
   }, [headerActive]);
 
-  // useEffect(() => {
-  //   if (cloneHeaderActive) {
-  //     document.body.style.overflow = "hidden";
-  //   } else {
-  //     document.body.style.overflow = "";
-  //   }
-
-  //   return () => {
-  //     document.body.style.overflow = "";
-  //   };
-  // }, [cloneHeaderActive]);
-
   const toggleDropdown = (dropdown) => {
     setSbDropdown((prev) => ({
       ...prev,
       [dropdown]: {
         ...prev[dropdown],
         open: !prev[dropdown].open,
-      },
-    }));
-  };
-
-  const toggleSubDropdown = (dropdown, subMenu) => {
-    setSbDropdown((prev) => ({
-      ...prev,
-      [dropdown]: {
-        ...prev[dropdown],
-        subMenu: {
-          ...prev[dropdown].subMenu,
-          [subMenu]: !prev[dropdown].subMenu[subMenu],
-        },
-      },
-    }));
-  };
-
-  const [clsbDropdown, setClSbDropdown] = useState({
-    dropdown1: {
-      open: false,
-      subMenu: {
-        sub1: false,
-        sub2: false,
-      },
-    },
-    dropdown2: {
-      open: false,
-    },
-  });
-
-  const toggleClDropdown = (dropdown) => {
-    setClSbDropdown((prev) => ({
-      ...prev,
-      [dropdown]: {
-        ...prev[dropdown],
-        open: !prev[dropdown].open,
-      },
-    }));
-  };
-
-  const toggleClSubDropdown = (dropdown, subMenu) => {
-    setClSbDropdown((prev) => ({
-      ...prev,
-      [dropdown]: {
-        ...prev[dropdown],
-        subMenu: {
-          ...prev[dropdown].subMenu,
-          [subMenu]: !prev[dropdown].subMenu[subMenu],
-        },
       },
     }));
   };
@@ -144,19 +82,6 @@ const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  //   useEffect(() => {
-  //   if (pathname === "/") {
-  //     const handleScroll = () => {
-  //       setSticky(window.scrollY > 0);
-  //     };
-  //     window.addEventListener("scroll", handleScroll);
-  //     return () => window.removeEventListener("scroll", handleScroll);
-  //   } else {
-  //     // on other pages always sticky
-  //     setSticky(true);
-  //   }
-  // }, [pathname]);
-
   return (
     <header
       className={`w-full transition-all duration-500 ease-in-out absolute top-0 left-0 z-50
@@ -173,12 +98,10 @@ const Header = () => {
       } 
     `}
     >
-      {/* <div className="bg-primary absolute w-[81.5%] h-[calc(100%-54px)] bottom-0 right-0 z-10 bg-hd"></div> */}
-      {/* <div className="bg-[#848e84a1] w-[60%] h-[0.7px] absolute top-[54.7px] right-0 z-50 br-hd"></div> */}
       <div className="container mx-auto relative z-20 lg:px-0 px-4">
         <div className="flex w-full items-center">
           <div className="logo pe-4 lg:pe-32">
-            <Link href="/">
+            <Link to="/">
               <img
                 src={logo}
                 alt="Green Logistics"
@@ -344,13 +267,13 @@ const Header = () => {
                   />
                 </div>
                 <div
-                  className="toggle md:hidden text-3xl text-primary h-10 w-10 md:h-13 md:w-13 flex justify-center items-center shadow-[0_0_15px_#44496a2e] rounded-md"
+                  className="toggle md:hidden text-3xl text-primary h-10 w-10 md:h-13 md:w-13 bg-white flex justify-center items-center shadow-[0_0_15px_#44496a2e] rounded-md"
                   onClick={() => setHeaderActive(true)}
                 >
                   <RiUserLine className="md:text-[1.3rem] text-[17px] text-primary" />
                 </div>
                 <div
-                  className="toggle text-3xl text-primary h-10 w-10 md:h-13 md:w-13 flex justify-center items-center shadow-[0_0_15px_#44496a2e] rounded-md"
+                  className="toggle text-3xl text-primary h-10 w-10 md:h-13 md:w-13 bg-white flex justify-center items-center shadow-[0_0_15px_#44496a2e] rounded-md"
                   onClick={() => setHeaderActive(true)}
                 >
                   <IoMdMenu className="md:text-[1.3rem] text-[17px] text-primary" />

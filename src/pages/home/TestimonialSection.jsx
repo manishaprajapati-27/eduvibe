@@ -50,7 +50,7 @@ const TestimonialSection = () => {
     },
   ];
   return (
-    <div className="md:py-30 py-20 bg-[url('src/assets/images/testimonials/bg.jpg')] bg-cover bg-center relative">
+    <div className="md:lg:py-30 md:py-20 py-15 py-20 bg-[url('src/assets/images/testimonials/bg.jpg')] bg-cover bg-center relative">
       <div className="container mx-auto px-4 lg:px-0 relative">
         <Heading
           heading="Our Lovely Students Feedback"

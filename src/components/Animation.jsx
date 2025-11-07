@@ -73,7 +73,7 @@ export const MotionTag = ({
         initial="hidden"
         whileInView="visible"
         transition={{ duration, delay, ease: "easeOut" }}
-        viewport={{ once: true, amount: 0.5 }}
+        viewport={{ once: true, amount: window.innerWidth < 768 ? 0.1 : 0.5 }}
         className={className}
         style={style}
       >

@@ -78,7 +78,7 @@ const OurTeam = () => {
     },
   ];
   return (
-    <div className="py-30 relative bg-[url('src/assets/images/team/bg.jpg')] bg-no-repeat bg-cover">
+    <div className="lg:py-30 md:py-20 py-15 relative bg-[url('src/assets/images/team/bg.jpg')] bg-no-repeat bg-cover">
       <div className="container mx-auto lg:px-0 px-4">
         <Heading
           heading="Introduce Our Life Coaches"

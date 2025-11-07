@@ -37,17 +37,17 @@ const WhyChooseUs = () => {
     },
   ];
   return (
-    <div className="bg-white md:py-30 py-20 relative pt-0 lg:pt-30">
+    <div className="bg-white lg:py-30 md:py-20 py-15 relative pt-0 lg:pt-30">
       <div className="container mx-auto lg:px-0 px-4">
         <div className="grid lg:grid-cols-2 grid-cols-1">
           <div className="lg:me-25 relative">
             <div className="flex gap-8 items-end mb-8">
-              <div className="grid grid-cols-2 gap-7">
+              <div className="grid grid-cols-2 md:gap-7 gap-4">
                 {data.map((dt, index) => (
-                  <MotionTag delay={index*0.2} key={index} className="card bg-white shadow-[0_0_15px_#121c2c15] relative z-30 rounded-md py-10 px-8 flex flex-col justify-center items-center">
+                  <MotionTag delay={index*0.2} key={index} className="card bg-white shadow-[0_0_15px_#121c2c15] relative z-30 rounded-md md:py-10 md:px-8 py-6 px-3 flex flex-col justify-center items-center">
                     <img src={dt.image} alt={dt.title} />
-                    <h4 className="text-dark font-extrabold text-4xl mt-6 mb-2">{dt.countNum}</h4>
-                    <p className="text-dark-alt font-medium">{dt.title}</p>
+                    <h4 className="text-dark font-extrabold text-4xl mt-6 mb-2 text-center">{dt.countNum}</h4>
+                    <p className="text-dark-alt font-medium text-center">{dt.title}</p>
                   </MotionTag>
                 ))}
               </div>

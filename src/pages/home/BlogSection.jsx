@@ -13,7 +13,7 @@ import { blogs } from "../../data";
 
 const BlogSection = () => {
   return (
-    <div className="md:py-30 py-20 bg-[url('src/assets/images/blog/bg.jpg')] bg-center bg-cover relative">
+    <div className="md:lg:py-30 md:py-20 py-15 py-20 bg-[url('src/assets/images/blog/bg.jpg')] bg-center bg-cover relative">
       <div className="container mx-auto lg:px-0 px-4">
         <Heading
           heading="Get Our Every News & Blog"

@@ -7,7 +7,7 @@ const ForgotPassword = () => {
   return (
     <>
       <PageHeader title="Gallery" pageTitle="Gallery" />
-      <div className="py-30">
+      <div className="lg:py-30 md:py-20 py-15">
         <div className="container mx-auto lg:px-0 px-4">
           <div className="card p-5 border border-light rounded-md">
             <div className="mb-6">

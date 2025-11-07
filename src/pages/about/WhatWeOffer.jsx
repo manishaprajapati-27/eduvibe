@@ -44,7 +44,7 @@ const WhatWeOffer = () => {
     },
   ];
   return (
-    <div className="py-30 relative">
+    <div className="lg:py-30 md:py-20 py-15 relative">
       <div className="container mx-auto lg:px-0 px-4">
         <Heading
           heading={

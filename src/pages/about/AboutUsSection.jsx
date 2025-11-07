@@ -11,7 +11,7 @@ import { MotionTag } from "../../components/Animation";
 
 const AboutUsSection = () => {
   return (
-    <div className="py-30 relative">
+    <div className="lg:py-30 md:pt-20 pt-15 relative">
       <div className="container mx-auto lg:px-0 px-4">
         <div className="grid lg:grid-cols-2 grid-cols-1">
           <MotionTag className="relative lg:me-10">
@@ -52,7 +52,7 @@ const AboutUsSection = () => {
               <h5 className="text-dark font-bold py-5 text-[20px]">
                 People Love To Learn With Us
               </h5>
-              <div className="grid md:grid-cols-2 grid-cols-1 gap-14">
+              <div className="grid md:grid-cols-2 grid-cols-1 md:gap-14">
                 <div className="flex mb-5 lg:mb-0">
                   <div className="">
                     <h4 className="text-secondary text-[32px] font-bold mb-2">

@@ -93,7 +93,7 @@ const ContactUs = () => {
   return (
     <>
       <PageHeader title="Contact Us" pageTitle="Contact Us" />
-      <div className="pt-30 relative">
+      <div className="lg:pt-30 pt-15 relative">
         <div className="container mx-auto md:px-0 px-4">
           <div>
             <Heading
@@ -178,7 +178,7 @@ const ContactUs = () => {
         <img src={Shape2} className="absolute top-[24%] right-[15%] hidden lg:block" alt="Contact" />
         <img src={Shape3} className="absolute bottom-[12%] right-[7%] hidden lg:block" alt="Contact" />
       </div>
-      <div className="py-30">
+      <div className="lg:py-30 md:py-20 py-15">
         <div className="container mx-auto md:px-0 px-4">
           <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3772.5225162673773!2d72.8379048759351!3d18.996683554456318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x455fc37258faed89%3A0x9766a99df4596373!2sPrecision%20Grow!5e0!3m2!1sen!2sin!4v1760940372166!5m2!1sen!2sin"

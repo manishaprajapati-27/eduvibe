@@ -32,7 +32,7 @@ const WhoWeAreSection = () => {
 
   if (!tabs || tabs.length === 0) return null;
   return (
-    <div className="md:py-30 py-20 relative">
+    <div className="md:lg:py-30 md:py-20 py-15 py-20 relative">
       <div className="container mx-auto lg:px-0 px-4">
         <div className="flex lg:justify-between lg:items-end lg:flex-row flex-col mb-15">
           <Heading

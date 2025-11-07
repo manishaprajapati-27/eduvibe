@@ -31,7 +31,7 @@ const ProductDetails = () => {
   return (
     <>
       <PageHeader title="Product Details" pageTitle="Product Details" />
-      <div className="py-30">
+      <div className="lg:py-30 md:py-20 py-15">
         <div className="container mx-auto lg:px-0 px-4">
           <div className="card mb-5 h-full relative mx-auto">
             <div className="grid lg:grid-cols-2 grid-cols-1 gap-8">
@@ -126,38 +126,12 @@ const ProductDetails = () => {
                         Tag:{" "}
                         <span className="text-dark-alt font-medium">book</span>
                       </h4>
-                      {/* <div className="flex gap-4 mt-6 md:mt-0">
-                        <a
-                          href="#!"
-                          className="text-dark h-10 w-10 flex items-center justify-center rounded-full bg-[#f2f2f2] transition-all duration-300 ease-in-out hover:bg-primary hover:text-white"
-                        >
-                          <FaFacebookF />
-                        </a>
-                        <a
-                          href="#!"
-                          className="text-dark h-10 w-10 flex items-center justify-center rounded-full bg-[#f2f2f2] transition-all duration-300 ease-in-out hover:bg-primary hover:text-white"
-                        >
-                          <FaXTwitter />
-                        </a>
-                        <a
-                          href="#!"
-                          className="text-dark h-10 w-10 flex items-center justify-center rounded-full bg-[#f2f2f2] transition-all duration-300 ease-in-out hover:bg-primary hover:text-white"
-                        >
-                          <FaPinterestP />
-                        </a>
-                        <a
-                          href="#!"
-                          className="text-dark h-10 w-10 flex items-center justify-center rounded-full bg-[#f2f2f2] transition-all duration-300 ease-in-out hover:bg-primary hover:text-white"
-                        >
-                          <FaInstagram />
-                        </a>
-                      </div> */}
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="w-full max-w-5xl mx-auto mt-14">
+            <div className="w-full max-w-5xl mx-auto lg:mt-14">
               {/* Tabs */}
               <div className="flex space-x-8 border-b justify-center border-gray-200">
                 <button
